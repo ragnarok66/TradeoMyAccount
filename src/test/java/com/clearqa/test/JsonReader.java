@@ -43,7 +43,7 @@ public class JsonReader {
 			//JSONArray json = new JSONArray();
 			//System.out.println(json.get(0).toString());
 			//return (String) json.get(0); //There can be more than 1 movies
-			//return (String) json.toString();
+		
 			return jsonText;
 			
 		} finally {
