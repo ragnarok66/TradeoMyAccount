@@ -61,5 +61,7 @@
 	<classpathentry kind="lib" path="C:/Users/Dimo Ivanov/Downloads/Cucumber/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dimo Ivanov/Downloads/Cucumber/jsonassert-1.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dimo Ivanov/Downloads/Cucumber/slf4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dimo Ivanov/Downloads/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dimo Ivanov/Downloads/selenium-java-2.53.1/selenium-2.53.1/selenium-java-2.53.1-srcs.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,687 +1,319 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#WinTouch native application"
-      },
-      {
-        "line": 2,
-        "value": "#Author: Tsvetan Toshev"
-      },
-      {
-        "line": 3,
-        "value": "#This feature file will create a project and will delete it."
-      },
-      {
-        "line": 4,
-        "value": "#-----------------------"
-      },
-      {
-        "line": 5,
-        "value": "#-----------------------"
-      }
-    ],
-    "line": 6,
+    "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 20087439149,
+              "duration": 3384172013,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setupcap()"
+              "location": "Hooks.openBrowser()"
             }
           }
         ],
-        "line": 23,
-        "name": "Create Project",
+        "line": 11,
+        "name": "Web page is visible",
         "description": "",
-        "id": "create-and-delete-project;create-project;;2",
+        "id": "tradeo-my-account;web-page-is-visible;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12362838114,
+              "duration": 6254583587,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I click on Add New project button",
-            "match": {
-              "location": "CreateAndDeleteProjectSteps.ClickNewProBtn()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6750858795,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I enter project name \"RadwinProj\"",
+            "line": 5,
+            "name": "I navigate to Tradeo Home Page \"https://tradeo.com/\"",
             "match": {
               "arguments": [
                 {
-                  "val": "RadwinProj",
-                  "offset": 22
+                  "val": "https://tradeo.com/",
+                  "offset": 32
                 }
               ],
-              "location": "CreateAndDeleteProjectSteps.FillProjectName(String)"
+              "location": "Tradeo_My_AccountSteps.I_navigate_to_home_page(String)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7377898502,
+              "duration": 6022238016,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I enter project description \"NewAntenna\"",
+            "line": 6,
+            "name": "I verify the page is visible",
             "match": {
-              "arguments": [
-                {
-                  "val": "NewAntenna",
-                  "offset": 29
-                }
-              ],
-              "location": "CreateAndDeleteProjectSteps.FillProjectDescription(String)"
+              "location": "Tradeo_My_AccountSteps.I_verify_page_is_visible()"
             },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8439519567,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I enter network id \"RadwinNetw\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "RadwinNetw",
-                  "offset": 20
-                }
-              ],
-              "location": "CreateAndDeleteProjectSteps.FillNetworkId(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27353646810,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I fill \"12\" and \"45\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "12",
-                  "offset": 8
-                },
-                {
-                  "val": "45",
-                  "offset": 17
-                }
-              ],
-              "location": "CreateAndDeleteProjectSteps.Fill_TputUp_TputDown(Integer,Integer)"
-            },
-            "matchedColumns": [
-              3,
-              4
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4999364164,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click project save button",
-            "match": {
-              "location": "CreateAndDeleteProjectSteps.ClickSaveBtn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 673188867,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I should see \"RadwinProj\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "RadwinProj",
-                  "offset": 14
-                }
-              ],
-              "location": "CreateAndDeleteProjectSteps.SeeProjectName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1223802799,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I click and hold on new project",
-            "match": {
-              "location": "CreateAndDeleteProjectSteps.i_click_and_hold_project_name()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 973486881,
-              "status": "passed"
-            },
-            "comments": [
-              {
-                "line": 17,
-                "value": "#Then I should see popup window with buttons \"\u003cDelete\u003e\" and \"\u003cEdit\u003e\" and \"\u003cCancel\u003e\""
-              }
-            ],
-            "line": 18,
-            "name": "I click on Delete button",
-            "match": {
-              "location": "CreateAndDeleteProjectSteps.i_click_delete_btn()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 463373822,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the project should be deleted \"No Projects To Show\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "No Projects To Show",
-                  "offset": 31
-                }
-              ],
-              "location": "CreateAndDeleteProjectSteps.deleted_project(String)"
-            },
-            "matchedColumns": [
-              8
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 7,
+            "line": 3,
             "name": "@start"
           }
         ]
-      }
-    ],
-    "name": "Create And Delete Project",
-    "description": "",
-    "id": "create-and-delete-project",
-    "keyword": "Feature",
-    "uri": "features/CreateAndDeleteProject.feature"
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#WinTouch native application"
       },
       {
-        "line": 2,
-        "value": "#Author: Tsvetan Toshev"
-      },
-      {
-        "line": 3,
-        "value": "#The General Flow will reproduce the flow from creating a project to the alignment."
-      },
-      {
-        "line": 4,
-        "value": "#The purpose of this feature file is to make a proof of concept, that Appium can be used for the needs of WinTouch app."
-      },
-      {
-        "line": 5,
-        "value": "#----------------------"
-      },
-      {
-        "line": 6,
-        "value": "#----------------------"
-      }
-    ],
-    "line": 7,
-    "elements": [
-      {
-        "line": 20,
-        "name": "Add new WinTouch project",
+        "line": 25,
+        "name": "Login Fail",
         "description": "",
-        "id": "general-wintouch-flow;add-new-wintouch-project;;2",
+        "id": "tradeo-my-account;login-fail;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 434189040,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I click on add new project button",
-            "match": {
-              "location": "GeneralFlowSteps.i_click_on_add_new_project_btn()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5624933800,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I enter project name with value \"RadwinProj\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "RadwinProj",
-                  "offset": 33
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_ProjectName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6898626856,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I enter project description with value \"NewAntenna\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "NewAntenna",
-                  "offset": 40
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_ProjectDescription(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7194628576,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I enter network id with value \"RadwinNetw\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "RadwinNetw",
-                  "offset": 31
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_NetworkId(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 25695728250,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I enter \"12\" and \"45\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "12",
-                  "offset": 9
-                },
-                {
-                  "val": "45",
-                  "offset": 18
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_TputUp_TputDown(Integer,Integer)"
-            },
-            "matchedColumns": [
-              3,
-              4
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4985060571,
+              "duration": 198793668,
               "status": "passed"
             },
             "line": 15,
-            "name": "I click new project save button",
+            "name": "I am on Tradeo Home Page",
             "match": {
-              "location": "GeneralFlowSteps.i_click_save_btn()"
+              "location": "Tradeo_My_AccountSteps.I_am_on_home_page()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 627587544,
+              "duration": 47594103,
               "status": "passed"
             },
             "line": 16,
-            "name": "I should see on home page \"RadwinProj\"",
+            "name": "I click SIGN IN button",
             "match": {
-              "arguments": [
-                {
-                  "val": "RadwinProj",
-                  "offset": 27
-                }
-              ],
-              "location": "GeneralFlowSteps.i_see_project_name(String)"
+              "location": "Tradeo_My_AccountSteps.I_click_on_SIGN_IN_Btn()"
             },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 33,
-        "name": "Add new working order to existing project",
-        "description": "",
-        "id": "general-wintouch-flow;add-new-working-order-to-existing-project;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+            "keyword": "When "
+          },
           {
             "result": {
-              "duration": 336731393,
+              "duration": 31527589,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I click on existing project \"RadwinProj\"",
+            "line": 17,
+            "name": "login popup appears",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.LoginPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105279696,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter invalid \"Game@gmail.com\" and \"password123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "RadwinProj",
-                  "offset": 29
+                  "val": "Game@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "password123",
+                  "offset": 38
                 }
               ],
-              "location": "GeneralFlowSteps.i_click_project_name(String)"
+              "location": "Tradeo_My_AccountSteps.I_enter_invalid_username_password(String,String)"
             },
             "matchedColumns": [
-              0
+              0,
+              1
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1366485452,
+              "duration": 2831764644,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I click on add new working order button",
+            "line": 19,
+            "name": "I click on commit butoon",
             "match": {
-              "location": "GeneralFlowSteps.i_click_order_button()"
+              "location": "Tradeo_My_AccountSteps.I_click_commit_btn()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 21469389147,
+              "duration": 226008949,
               "status": "passed"
             },
-            "line": 25,
-            "name": "I enter work order name with value \"OrderNa\"",
+            "line": 20,
+            "name": "Valid error message appears",
             "match": {
-              "arguments": [
-                {
-                  "val": "OrderNa",
-                  "offset": 36
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_OrderName(String)"
+              "location": "Tradeo_My_AccountSteps.ErrorMsg()"
             },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Successfull login",
+        "description": "",
+        "id": "tradeo-my-account;successfull-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
           {
             "result": {
-              "duration": 7348233723,
+              "duration": 1360645042,
               "status": "passed"
             },
-            "line": 26,
-            "name": "I enter work order adress with value \"OrderAdress\"",
+            "line": 28,
+            "name": "I navigate to Tradeo Home Page \"https://tradeo.com/\"",
             "match": {
               "arguments": [
                 {
-                  "val": "OrderAdress",
-                  "offset": 38
+                  "val": "https://tradeo.com/",
+                  "offset": 32
                 }
               ],
-              "location": "GeneralFlowSteps.i_fill_OrderAdress(String)"
+              "location": "Tradeo_My_AccountSteps.I_navigate_to_home_page(String)"
             },
             "matchedColumns": [
               2
             ],
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15574771226,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I enter phone number with value \"911\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "911",
-                  "offset": 33
-                }
-              ],
-              "location": "GeneralFlowSteps.i_fill_PhoneNumber(Integer)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4894442882,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I click new order save button",
-            "match": {
-              "location": "GeneralFlowSteps.i_click_save_newWorkorder_btn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 534844108,
+              "duration": 62660299,
               "status": "passed"
             },
             "line": 29,
-            "name": "I should see \"OrderNa\" with status New",
+            "name": "I click SIGN IN button",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.I_click_on_SIGN_IN_Btn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34040543,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "login popup appears",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.LoginPopup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 133544895,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter valid \"tradeo.user666@gmail.com\" and \"odin.2000\"",
             "match": {
               "arguments": [
                 {
-                  "val": "OrderNa",
-                  "offset": 14
+                  "val": "tradeo.user666@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "odin.2000",
+                  "offset": 46
                 }
               ],
-              "location": "GeneralFlowSteps.i_see_order_name(String)"
+              "location": "Tradeo_My_AccountSteps.I_enter_valid_username_password(String,String)"
             },
             "matchedColumns": [
+              0,
               1
             ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2840011661,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on commit butoon",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.I_click_commit_btn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33108704,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am successfully redirected to My Account page",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.MyAccountPage()"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 45,
-        "name": "Add BarCode to working order of existing project",
+        "line": 48,
+        "name": "Successfull logout",
         "description": "",
-        "id": "general-wintouch-flow;add-barcode-to-working-order-of-existing-project;;2",
+        "id": "tradeo-my-account;successfull-logout;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 173305186,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I click on existing workorder",
-            "match": {
-              "location": "GeneralFlowSteps.i_click_on_existing_wo()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17316694715,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "I enter barcode number with value \"4478887555545\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "4478887555545",
-                  "offset": 35
-                }
-              ],
-              "location": "GeneralFlowSteps.i_enter_barcode(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 554689108,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "I click save barcode button",
-            "match": {
-              "location": "GeneralFlowSteps.i_click_on_save_btn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34397646542,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I should be redirected to WO settings with button \"Open Frequency List\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Open Frequency List",
-                  "offset": 51
-                }
-              ],
-              "location": "GeneralFlowSteps.wo_settings_page(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1835443561,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I click on complete button",
-            "match": {
-              "location": "GeneralFlowSteps.i_click_on_complete_btn()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3447257760,
+              "duration": 4196148,
               "status": "passed"
             },
             "line": 41,
-            "name": "I should be redirected to horizontal placement page",
+            "name": "I am on My Account Page",
             "match": {
-              "location": "GeneralFlowSteps.horizontal_placement_page()"
+              "location": "Tradeo_My_AccountSteps.I_am_on_my_account_page()"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 54,
-        "name": "Aligment process",
-        "description": "",
-        "id": "general-wintouch-flow;aligment-process;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+            "keyword": "Given "
+          },
           {
             "result": {
-              "duration": 1589576256,
+              "duration": 40353484,
               "status": "passed"
             },
-            "line": 49,
-            "name": "I click on click on continue button",
+            "line": 42,
+            "name": "I click SIGN OUT button",
             "match": {
-              "location": "GeneralFlowSteps.i_click_on_continue_btn()"
+              "location": "Tradeo_My_AccountSteps.I_click_on_SIGN_OUT_Btn()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1520423461,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I am redirected to Tradeo Home Page",
+            "match": {
+              "location": "Tradeo_My_AccountSteps.home_page()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "General WinTouch Flow",
+    "name": "Tradeo My Account",
     "description": "",
-    "id": "general-wintouch-flow",
+    "id": "tradeo-my-account",
     "keyword": "Feature",
-    "uri": "features/GeneralFlow.feature"
+    "uri": "com/clearqa/test/Tradeo_My_Account.feature"
   }
 ]
